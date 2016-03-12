@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bundle.css">
+<head>
+	<meta charset="UTF-8">
+	<title>Kasper</title>
+</head>
+<body>
+	<header class="header">
+		<ul id="gallary" class="owl-carousel owl-theme owl-loaded">
+			<li class="header__gallery header__photo1"></li>
+			<li class="header__gallery header__photo2"></li>
+			<li class="header__gallery header__photo3"></li>
+		</ul>
+		<div class="header__position">
+			<div class="header__main">
+				<div class="container">
+					<a href="#">
+						<img class="header__logo" src="img/logo.png" alt="logo">
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a class="header__link" href="#Home">Главная</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#Services">Сервис</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#Portfolio">Портфолио</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#About">О нас</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#Pracing">Цены</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#Contact">Контакты</a>
+						</li>
+					</ul>
+					<a class="header__search" href="#"></a>
+				</div>
+<!-- 				<div class="header__block">
+					<div class="container">
+						<h2>Hello World</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quasi impedit commodi magni cupiditate eos itaque dolore et autem! Aliquid eaque sunt placeat, quibusdam illum incidunt ratione id temporibus quo?</p>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</header>
+<!-- Configuring Carousel http://owlgraphic.com/owlcarousel/ -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".owl-carousel").owlCarousel({
+			navigation: true,
+			navigationText: ["prev","next"],
+			dots:true,
+			autoplay:true,
+			animateOut: 'fadeOut',
+			items:1,
+			itemsScaleUp: true,
+			margin:0,
+			stagePadding:0,
+			smartSpeed:450,
+			slideSpeed: 1,
+			mouseDrag:false
+		});
+	});
+</script>
+</body>
+</html>
